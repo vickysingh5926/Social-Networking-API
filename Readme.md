@@ -3,7 +3,7 @@
 2. Change the current working directory to the location where you want the cloned directory to be made.
 3. Type git clone, and then paste the URL you copied earlier.
 ```
-git clone fff
+git clone https://github.com/vickysingh5926/Social-Networking-API.git
 ```
 4. Press Enter to create your local clone.
 5. Done! You have successfully cloned the repository to your local machine.
