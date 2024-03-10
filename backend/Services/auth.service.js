@@ -158,6 +158,25 @@ class AuthService {
       throw err;
     }
   }
+  async followerFollowing(user) {
+    try {
+      if (!user) throw new Error("User is required");
+      if (!user.id) throw new Error("Id is required");
+      const user_data = await userRepository.giveUserDetails(user.id);
+      if (!user_data) throw new Error("User not found");
+      const followers = user_data.followers;
+      const following = user_data.following;
+      return {
+        followers,
+        following,
+        loginToken: user.loginToken,
+        refreshToken: user.refreshToken,
+      };
+    } catch (err) {
+      throw err;
+    }
+  }
 }
 
 module.exports = new AuthService();
+3

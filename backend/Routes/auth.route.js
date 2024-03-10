@@ -13,5 +13,6 @@ router.post("/delete", verifySignIn, authController.delete);
 router.post("/user", verifySignIn, authController.giveUserDetails);
 router.post("/follow", verifySignIn, authController.follow);
 router.post("/unfollow", verifySignIn, authController.unfollow);
+router.post("/follower-following", verifySignIn, authController.followerFollowing);
 
 module.exports = router;

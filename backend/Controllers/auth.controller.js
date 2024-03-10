@@ -64,6 +64,15 @@ class AuthController {
       res.status(400).send(err.message);
     }
   }
+  async followerFollowing(req, res) {
+    try {
+      const user = req.body;
+      const result = await authService.followerFollowing(user);
+      res.status(200).send(result);
+    } catch (err) {
+      res.status(400).send(err.message);
+    }
+  }
 }
 
 module.exports = new AuthController();
