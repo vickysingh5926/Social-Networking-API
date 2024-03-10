@@ -297,3 +297,57 @@ Unfollow a user.
 
 </details>
 
+
+### `POST` /follower-following
+
+Get followers and following list of a user.
+
+#### Request
+
+<details>
+<summary> Toggle Request Body </summary>
+
+```json
+    {
+    "loginToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczYmRiZjMwLTNlNjQtNGYxZC05OWY2LWU5MTg0M2JhN2U0NSIsIm5hbWUiOiJEaGFuIEJhaGFkdXIgQ2hoZXR0cmkiLCJ1c2VybmFtZSI6InRlc3RfdXNlciAxMiIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJwaG90byI6InRlc3RfcGhvdG9fdXJsIiwiaWF0IjoxNzEwMDYyNjc0LCJleHAiOjE3MTAwOTg2NzR9.Br7UK5wDFytqL21Ft8qg6wMfbFltQlSZPCTeYAihg10",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczYmRiZjMwLTNlNjQtNGYxZC05OWY2LWU5MTg0M2JhN2U0NSIsIm5hbWUiOiJEaGFuIEJhaGFkdXIgQ2hoZXR0cmkiLCJ1c2VybmFtZSI6InRlc3RfdXNlciAxMiIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJwaG90byI6InRlc3RfcGhvdG9fdXJsIiwiaWF0IjoxNzEwMDYyNjc0LCJleHAiOjE3MTA2Njc0NzR9.yHkf7eaezwjCZesCZ6plYKzRPVvu5jpNTiMFFmaR-JU",
+        "id": "73bdbf30-3e64-4f1d-99f6-e91843ba7e45"
+
+}
+```
+
+</details>
+
+
+#### Response
+
+<details>
+<summary> Toggle Response </summary>
+
+```json
+    {
+    "followers": [],
+    "following": [
+        {
+            "_id": "65ed7cd79f576b9c988651ec",
+            "id": "b05b1a7c-0465-46e9-97e4-a6c283b0ef42",
+            "name": "Dhan Bahadur Chhettri 1",
+            "username": "test_user",
+            "email": "test1@gmail.com",
+            "followers": [
+                "65ed7be09f576b9c988651e5"
+            ],
+            "following": [],
+            "posts": [],
+            "photo": "test_photo_url",
+            "__v": 5
+        }
+    ],
+    "loginToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczYmRiZjMwLTNlNjQtNGYxZC05OWY2LWU5MTg0M2JhN2U0NSIsIm5hbWUiOiJEaGFuIEJhaGFkdXIgQ2hoZXR0cmkiLCJ1c2VybmFtZSI6InRlc3RfdXNlciAxMiIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJwaG90byI6InRlc3RfcGhvdG9fdXJsIiwiaWF0IjoxNzEwMDYyNjc0LCJleHAiOjE3MTAwOTg2NzR9.Br7UK5wDFytqL21Ft8qg6wMfbFltQlSZPCTeYAihg10",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczYmRiZjMwLTNlNjQtNGYxZC05OWY2LWU5MTg0M2JhN2U0NSIsIm5hbWUiOiJEaGFuIEJhaGFkdXIgQ2hoZXR0cmkiLCJ1c2VybmFtZSI6InRlc3RfdXNlciAxMiIsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJwaG90byI6InRlc3RfcGhvdG9fdXJsIiwiaWF0IjoxNzEwMDYyNjc0LCJleHAiOjE3MTA2Njc0NzR9.yHkf7eaezwjCZesCZ6plYKzRPVvu5jpNTiMFFmaR-JU"
+}
+```
+
+</details>
+
+
