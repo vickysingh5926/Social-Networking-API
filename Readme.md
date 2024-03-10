@@ -1,3 +1,18 @@
+# API Documentation
+```
+https://vicky.gitbook.io/social-networking-api-1
+```
+
+# POSTMAN DOCS
+```
+https://documenter.getpostman.com/view/24931735/2sA2xh3D3a
+```
+
+# BACKEND BASE API
+```
+https://social-networking-api-l7n8.onrender.com
+```
+
 # How to Clone a Repository
 1. Open the terminal
 2. Change the current working directory to the location where you want the cloned directory to be made.
